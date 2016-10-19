@@ -1,0 +1,14 @@
+## Interface: 70300
+## Title: Swim Swapper
+## Notes: Equips Underlight Angler when not in combat and swimming
+## Author: Domia on Maiev-US (Curse profile: Asuah)
+## Version: 0.1.0
+## SavedVariables: SwimSwapperDB
+
+#@no-lib-strip@
+includes.xml
+#@end-no-lib-strip@
+
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+SwimSwapper.lua
