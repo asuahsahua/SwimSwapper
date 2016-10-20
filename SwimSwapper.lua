@@ -40,13 +40,10 @@ local function OnUpdate()
         return
     end
 
-    local combat = InCombat()
     local swimming = IsSwimming()
-    local angler_equiped = IsAnglerEquipped()
 
+    -- we'd like to swap to weapon in combat, but turns out you're not allowed to do that!
     if not swimming then
-        EquipWeapon()
-    elseif swimming and combat then
         EquipWeapon()
     else
         EquipAngler()
